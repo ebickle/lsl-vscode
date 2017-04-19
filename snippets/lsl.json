@@ -86,5 +86,48 @@
             "}"
         ],
         "description": "default state"
-    }    
+    },
+    "run_time_permissions event": {
+        "prefix": "run_time_permissions",
+        "body": [
+            "run_time_permissions(integer perm)",
+            "{",
+            "\tif (perm & ${PERMISSION_})",
+            "\t{",
+            "\t\t${0}",
+            "\t}",
+            "}"
+        ],
+        "description": "run_time_permissions event"
+    },
+    "touch_start event": {
+        "prefix": "touch_start",
+        "body": [
+            "touch_start(integer num_detected)",
+            "{",            
+            "\tinteger i;",
+            "\tfor (i = 0; i < num_detected; i++)",
+            "\t{",
+            "\t\tkey avatar = llDetectedKey(i);",
+            "\t\t${0}",
+            "\t}",
+            "}"
+        ],
+        "description": "touch_start event"
+    },
+    "touch_end event": {
+        "prefix": "touch_end",
+        "body": [
+            "touch_end(integer num_detected)",
+            "{",            
+            "\tinteger i;",
+            "\tfor (i = 0; i < num_detected; i++)",
+            "\t{",
+            "\t\tkey avatar = llDetectedKey(i);",
+            "\t\t${0}",
+            "\t}",
+            "}"
+        ],
+        "description": "touch_end event"
+    }
 }
