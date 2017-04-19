@@ -2,7 +2,7 @@
     "name": "lsl",
     "displayName": "LSL",
     "description": "LSL language support for Visual Studio Code",
-    "version": "0.1.0",
+    "version": "0.2.1",
     "publisher": "ebickle",
     "license": "MIT",    
     "repository": {
@@ -33,8 +33,12 @@
         "grammars": [{
             "language": "lsl",
             "scopeName": "source.lsl",
-            "path": "./syntaxes/lsl.tmLanguage"
-        }]
+            "path": "./syntaxes/lsl.tmLanguage.json"
+        }],
+        "snippets": [{
+            "language": "lsl",
+            "path": "./snippets/lsl.json"
+        }]  
     },
     "scripts": {
         "vscode:prepublish": "tsc -p ./",

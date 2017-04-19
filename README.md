@@ -9,8 +9,8 @@ Install Visual Studio Code. Then, in the command palette (cmd-shift-p) select In
 
 While not required, you may also map the .lsl file extension to open Visual Studio Code. 
 
-## Third-party Components
-- TextMate bundle for LSL from [https://github.com/textmate/secondlife-lsl.tmbundle](https://github.com/textmate/secondlife-lsl.tmbundle).
+## Known issues
+- Angle brackets in vector and rotation literals are classified as relational operators.
 
 ## Disclaimers
 Second Life® and Linden Scripting Language are trademarks of Linden Research, Inc. This Visual Studio Code extension is not affiliated with or sponsored by Linden Research.
