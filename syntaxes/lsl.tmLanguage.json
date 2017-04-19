@@ -246,8 +246,14 @@
 					"include": "#else-part"
 				},		
 				{
+					"include": "#jump-statement"
+				},
+				{
 					"include": "#return-statement"
 				},
+      			{
+        			"include": "#labeled-statement"
+	  			},
 				{
 					"include": "#variable-declaration"
 				},
@@ -395,19 +401,68 @@
 				}
 			]
 		},
+		"jump-statement":
+		{
+			"begin": "(?<!\\.)\\b(jump)\\b",
+			"beginCaptures":
+			{
+				"1": {
+					"name": "keyword.control.jump.lsl"
+				}
+			},
+			"end": "(?=;)",
+			"patterns": [
+				{
+					"begin": "\\b(jump)\\b",
+					"beginCaptures": {
+						"1": {
+							"name": "keyword.control.case.lsl"
+						}
+					},
+					"end": "(?=;)",
+					"patterns": [
+						{
+							"include": "#expression"
+						}
+					]
+				},
+				{
+					"name": "entity.name.label.lsl",
+					"match": "[_[:alpha:]][_[:alnum:]]*"
+				}
+			]		
+		},
 		"return-statement": {
 			"begin": "(?<!\\.)\\b(return)\\b",
-				"beginCaptures": {
-					"1": {
-						"name": "keyword.control.flow.return.lsl"
-					}
-				},
-				"end": "(?=;)",
-				"patterns": [
+			"beginCaptures": {
+				"1": {
+					"name": "keyword.control.flow.return.lsl"
+				}
+			},
+			"end": "(?=;)",
+			"patterns": [
 				{
 					"include": "#expression"
 				}
 			]
+		},
+		"labeled-statement": {
+ 			"match": "(\\@)([_[:alpha:]][_[:alnum:]]*)\\s*(;)",
+    		"captures": {
+				"1": {
+					"name": "punctuation.separator.ampersand.lsl"
+				},
+				"2": {
+					"name": "entity.name.label.lsl"
+				},
+				"3": {
+					"patterns": [
+						{
+							"include": "#punctuation-semicolon"
+						}
+					]
+				}
+			}
 		},
 		"expression": {
 			"patterns": [
