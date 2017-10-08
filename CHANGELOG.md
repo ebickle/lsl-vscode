@@ -1,7 +1,7 @@
 # Change Log
 All notable changes to the "LSL for Visual Studio Code" extension will be documented in this file.
 
-## [0.3.1] - 2017-10-08
+## [0.3.2] - 2017-10-08
 - Thanks to [`Builders Brewery`](http://www.buildersbrewery.com/) for finding these issues and suggesting improvements!
 - Added syntax highlighting for quaternion keyword.
 - Removed preview label.
