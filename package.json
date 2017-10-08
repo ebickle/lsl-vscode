@@ -1,8 +1,8 @@
 {
     "name": "lsl",
     "displayName": "LSL",
-    "description": "LSL language support for Visual Studio Code",
-    "version": "0.2.1",
+    "description": "Linden Scripting Language (LSL) support for Visual Studio Code",
+    "version": "0.3.1",
     "publisher": "ebickle",
     "license": "MIT",    
     "repository": {
@@ -15,7 +15,7 @@
     "categories": [
         "Languages"
     ],
-    "preview": true,
+    "preview": false,
     "activationEvents": [
         "onLanguage:lsl"
     ],    

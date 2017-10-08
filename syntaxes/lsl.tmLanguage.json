@@ -713,7 +713,7 @@
 			"match": "[_[:alpha:]][_[:alnum:]]*"
 		},
 		"type": {
-			"match": "\\b(float|integer|key|list|rotation|string|vector)\\b",
+			"match": "\\b(float|integer|key|list|quaternion|rotation|string|vector)\\b",
 			"captures": {
 				"1": {
 					"name": "keyword.type.lsl"
