@@ -13,12 +13,9 @@
         "vscode": "^1.11.0"
     },
     "categories": [
-        "Languages"
+        "Programming Languages"
     ],
     "preview": false,
-    "activationEvents": [
-        "onLanguage:lsl"
-    ],    
     "main": "./out/src/extension",    
     "contributes": {
         "languages": [{

@@ -1,6 +1,9 @@
 # Change Log
 All notable changes to the "LSL for Visual Studio Code" extension will be documented in this file.
 
+## Unreleased
+- Fix deprecated syntax in package manifest.
+
 ## [0.3.2] - 2017-10-08
 - Thanks to [`Builders Brewery`](http://www.buildersbrewery.com/) for finding these issues and suggesting improvements!
 - Added syntax highlighting for quaternion keyword.
