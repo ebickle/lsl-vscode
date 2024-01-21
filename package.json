@@ -18,24 +18,32 @@
     "preview": false,
     "main": "./out/src/extension",
     "contributes": {
-        "languages": [{
-            "id": "lsl",
-            "aliases": [
-                "LSL",
-                "Linden Scripting Language"
-            ],
-            "extensions": [".lsl"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
+        "languages": [
+            {
+                "id": "lsl",
+                "aliases": [
+                    "LSL",
+                    "Linden Scripting Language"
+                ],
+                "extensions": [
+                    ".lsl"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
                 "language": "lsl",
                 "scopeName": "source.lsl",
                 "path": "./syntaxes/lsl.tmLanguage.json"
-        }],
-        "snippets": [{
+            }
+        ],
+        "snippets": [
+            {
                 "language": "lsl",
                 "path": "./snippets/lsl.json"
-        }]
+            }
+        ]
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",
