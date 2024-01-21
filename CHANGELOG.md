@@ -3,6 +3,7 @@ All notable changes to the "LSL for Visual Studio Code" extension will be docume
 
 ## Unreleased
 - Fix deprecated syntax in package manifest.
+- Update development-time dependencies.
 
 ## [0.3.2] - 2017-10-08
 - Thanks to [`Builders Brewery`](http://www.buildersbrewery.com/) for finding these issues and suggesting improvements!
